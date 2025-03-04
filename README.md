@@ -1,5 +1,4 @@
 
-![banner](Assets/banner.png)
 # Algorithm Visualizer
 
 A better visualization of different algorithms made with React. 
@@ -59,30 +58,6 @@ I have implemented a total of `24 algorithms` so far. And will try to add more l
 ### Contribution
 I am not sure if anyone would like to contribute to this project or not. But any kind of contributions are welcomes. Also if you like this please star this repo. It keeps me motivated.
 
-### Special Features addition timeline
-
-- Commit 16: Added Flip Move animation to inplace sorting components
-- Commit 20: Added Tree Structure
-- 13 Dec 2024: Release v2.0.0: Migrate the project from legacy project to next js with shadcn ui [#3](https://github.com/TamimEhsan/AlgorithmVisualizer/pull/3)
-
-### Acknowledgement
-
-I took inspirations from the following sources for some of the segments.
-- `Pathfinder`: [The Projects That Got Me Into Google](https://youtu.be/n4t_-NjY_Sg)
-- `Archimedes Spiral for Primes`: [Why do prime numbers make these spirals? ](https://youtu.be/EK32jo7i5LQ)
-- `Recursion tree visualizer`: [Recursion Tree Visualizer](https://github.com/brpapa/recursion-tree-visualizer)
-- `Turing Machine`: [Tursi](https://github.com/schaetzc/tursi)
-
-### Run locally
-
-Make sure you have node installed in your system. Then run
-```bash
-npm i
-npm run dev
-```
-This will start the app in `http://localhost:3000/AlgorithmVisualizer`
-
-### Inspiration for next sections
 
 - [University of San Francisco Site](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html) 
 - ​[algorithm-visualizer](https://github.com/algorithm-visualizer)
