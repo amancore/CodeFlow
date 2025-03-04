@@ -3,7 +3,7 @@
 
 A better visualization of different algorithms made with React. 
 
-Explore more than 24 algorithms with step by step visualization simplifying the learning process and making it more engaging for a better understanding. 
+Explore more than 14 algorithms with step by step visualization simplifying the learning process and making it more engaging for a better understanding. 
 
 So far there are 6 segments  
 - Dijkstra
