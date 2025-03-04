@@ -84,8 +84,6 @@ class Edge extends Component {
                         repeatCount="1"
                     />
                 </line>
-                {/*<polyline points={this.getPolyPoints()} fill="none" stroke="black" strokeWidth={'0.5'}*/}
-                {/*          marker-start="url(#arrow)" />*/}
             </g>
         );
     }

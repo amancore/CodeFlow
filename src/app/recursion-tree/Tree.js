@@ -1,6 +1,3 @@
-// draw tree class functions start :/
-
-
 export class Tree{
     constructor(node=0,children=[],label="") {
         this.id = 0;
@@ -131,8 +128,6 @@ function apportion(v, default_ancestor, distance) {
 
     let w = v.lbrother();
     if (w !== undefined) {
-        // inbuchheimnotation:
-        //i == inner;o == outer;r == right;l == left;r = +;l = -
         let vir, vor, vil, vol, sir, sor, sol, sil;
         vir = vor = v;
         vil = w;
@@ -173,8 +168,6 @@ function apportion(v, default_ancestor, distance) {
 
 function move_subtree(wl, wr, shift) {
     let subtrees = wr.number - wl.number;
-    // console.log(wl.tree, "is conflicted with", wr.tree, 'moving', subtrees, 'shift', shift);
-    // print wl, wr, wr.number, wl.number, shift, subtrees, shift / subtrees
     wr.change -= shift / subtrees;
     wr.shift += shift;
     wl.change += shift / subtrees;
@@ -185,10 +178,8 @@ function move_subtree(wl, wr, shift) {
 function execute_shifts(v) {
     let shift, change;
     shift = change = 0;
-    // for (let w in v.children[:: - 1])
     for(let i=v.children.length-1;i>=0;i--){
         let w = v.children[i];
-        //console.log("shift:", w.tree.node, shift, w.change);
         w.x += shift;
         w.mod += shift;
         change += w.change;
@@ -212,8 +203,6 @@ function second_walk(v, m = 0, depth = 0, min = undefined) {
 
     if (min === undefined || v.x < min)
         min = v.x;
-
-    // for (let w in v.children)
     for(let i=0;i<v.children.length;i++){
         let w = v.children[i];
         min = second_walk(w, m + v.mod, depth + 1, min);
