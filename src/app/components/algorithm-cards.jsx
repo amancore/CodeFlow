@@ -11,13 +11,6 @@ const algorithms = [
 		image: "/images/node.png",
 	},
 	{
-		id: "n-queen",
-		title: "N Queen",
-		description:
-			"The N queens puzzle is the problem of placing N chess queens on an N*N chessboard so that no two queens threaten each other",
-		image: "/images/matrix.PNG",
-	},
-	{
 		id: "prime-numbers",
 		title: "Prime Numbers",
 		description:
@@ -25,25 +18,11 @@ const algorithms = [
 		image: "/images/number-1.png",
 	},
 	{
-		id: "recursive-sorting",
-		title: "Divide & Conquer Sorting",
-		description:
-			"Present recursive sorting via a tree diagram, breaking down data into manageable segments. Each branch symbolizes a recursive call, sequentially revealing the sorting mechanism.",
-		image: "/images/consolidate.png",
-	},
-	{
 		id: "pathfinder",
 		title: "Dijkstra Algorithm",
 		description:
 			"Visualise Dijkstra's algorithm on a graph, tracing shortest paths from a source node. Nodes are sequentially explored, with distances dynamically updated, showcasing efficient route determination.",
 		image: "/images/knowledge-graph.png",
-	},
-	{
-		id: "sorting",
-		title: "Sorting Algorithm",
-		description:
-			"Animate sorting algorithms using bar charts, dynamically reordering elements in real-time. Distinct colors delineate sorted and unsorted segments, vividly depicting the sorting progression.",
-		image: "/images/order.png",
 	},
 	{
 		id: "recursion-tree",

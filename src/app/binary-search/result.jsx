@@ -1,21 +1,19 @@
 import { Button } from '@/components/ui/button';
-import React, { Component } from 'react';
-class Result extends Component {
-    render() {
-        return (
-            <div>
-                <span className='text-3xl display-3'>
-                    Your number is {this.props.res}
-                </span> <br />
-                <Button
-                    className='btn btn-warning btn-lg'
-                    onClick={this.props.onRestart}
-                >
-                    Restart
-                </Button>
-            </div>
-        );
-    }
-}
+import React from 'react';
 
-export default Result;
+export default function Result({ res, onRestart }) {
+	return (
+		<div>
+			<span className='text-4xl display-10'>
+				Your number is {res}
+			</span>
+			<br />
+			<Button
+				className='btn btn-warning btn-lg'
+				onClick={onRestart}
+			>
+				Restart
+			</Button>
+		</div>
+	);
+}

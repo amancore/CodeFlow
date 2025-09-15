@@ -1,67 +1,65 @@
-import React, {Component} from 'react';
+import React, { useEffect, useRef } from "react";
 
-class Vertex extends Component {
+export default function Vertex(props) {
+	const cxRef = useRef(null);
+	const cyRef = useRef(null);
+	const tRef = useRef(null);
 
-    constructor() {
-        super();
+	useEffect(() => {
+		if (props.id === 0) return;
+		if (cxRef.current && typeof cxRef.current.beginElement === "function") cxRef.current.beginElement();
+		if (cyRef.current && typeof cyRef.current.beginElement === "function") cyRef.current.beginElement();
+		if (tRef.current && typeof tRef.current.beginElement === "function") tRef.current.beginElement();
+	}, []);
 
-    }
-    componentDidMount() {
-        if( this.props.id === 0 ) return;
-        document.getElementById('cxanim'+this.props.id).beginElement();
-        document.getElementById('cyanim'+this.props.id).beginElement();
-        document.getElementById('tanim'+this.props.id).beginElement();
-    }
-    render() {
-
-        return (
-            <g>
-                <circle
-                    cx={this.props.pos.x}
-                    cy={this.props.pos.y}
-                    r={6}
-                    stroke="black" strokeWidth="0.5" fill={this.props.current?'cyan':'white'}
-                >
-                    <animate
-                        id={'cxanim'+this.props.id}
-                        attributeName='cx'
-                        values={this.props.pos.px+";"+this.props.pos.x}
-                        dur='0.5s'
-                        repeatCount="1"
-                    />
-                    <animate
-                        id={'cyanim'+this.props.id}
-                        attributeName='cy'
-                        values={this.props.pos.py+";"+this.props.pos.y}
-                        dur='0.5s'
-                        repeatCount="1"
-                    />
-                </circle>
-                <text
-                    style={{font:'3px sans-serif'}}
-                    x={this.props.pos.x}
-                    y={this.props.pos.y-4}
-                    textAnchor={'middle'}
-                    // alignmentBaseline={'top'}
-                >
-                    <animate
-                        id={'tanim'+this.props.id}
-                        attributeName='opacity'
-                        values='0;0;1'
-                        dur='1s'
-                        repeatCount="1"
-                    />
-                    <tspan x={this.props.pos.x} dy='1.2em' >N:{this.props.label}</tspan>
-                    <tspan  x={this.props.pos.x} dy='1.2em'>R:{this.props.ret}</tspan>
-                </text>
-
-            </g>
-        );
-    }
+	return (
+		<g>
+			<circle
+				cx={props.pos.x}
+				cy={props.pos.y}
+				r={6}
+				stroke="black"
+				strokeWidth="0.5"
+				fill={props.current ? "cyan" : "white"}
+			>
+				<animate
+					ref={cxRef}
+					id={"cxanim" + props.id}
+					attributeName="cx"
+					values={props.pos.px + ";" + props.pos.x}
+					dur="0.5s"
+					repeatCount="1"
+				/>
+				<animate
+					ref={cyRef}
+					id={"cyanim" + props.id}
+					attributeName="cy"
+					values={props.pos.py + ";" + props.pos.y}
+					dur="0.5s"
+					repeatCount="1"
+				/>
+			</circle>
+			<text
+				style={{ font: "3px sans-serif" }}
+				x={props.pos.x}
+				y={props.pos.y - 4}
+				textAnchor={"middle"}
+			>
+				<animate
+					ref={tRef}
+					id={"tanim" + props.id}
+					attributeName="opacity"
+					values="0;0;1"
+					dur="1s"
+					repeatCount="1"
+				/>
+				<tspan x={props.pos.x} dy="1.2em">
+					N:{props.label}
+				</tspan>
+				<tspan x={props.pos.x} dy="1.2em">
+					R:{props.ret}
+				</tspan>
+			</text>
+		</g>
+	);
 }
-
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-export default Vertex;

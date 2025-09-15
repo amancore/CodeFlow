@@ -13,8 +13,7 @@ export default function Page() {
     <main className="container mx-auto py-12 px-4">
       <AlgorithmCards />
     </main>
-    <Footer/>
-  </div>
-  
+    	<Footer/>
+ 		</div>
   )
 }
