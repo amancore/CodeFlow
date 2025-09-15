@@ -33,7 +33,21 @@ Currently, there are **6 main segments**, with a total of **10 algorithms implem
 
 ## Other Algorithms
 
+<<<<<<< HEAD
 - Sieve of Eratosthenes (for prime numbers)
+=======
+- Graph Search
+  - DFS
+  - BFS
+  - Dijkstra
+  - Recursive Maze Creation
+- Sorting
+  - Bubble sort
+  - Selection sort
+  - Insertion sort
+  - Quick sort
+- Sieve of Eratosthenes
+>>>>>>> ec2fe56 (ok)
 - Archimedes Spiral
 - N Queen Backtracking
 - Binary Search

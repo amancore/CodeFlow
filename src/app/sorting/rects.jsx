@@ -13,7 +13,6 @@ const Rects = ({ rects, speed }) => {
             <FlipMove
                 className="flex justify-center items-end"
                 duration={speed}
-            // easing="cubic-bezier(.12,.36,.14,1.2)"
             >
                 {rects.map((rect, rectidx) => {
                     return (

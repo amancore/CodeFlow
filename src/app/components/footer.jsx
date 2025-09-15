@@ -1,8 +1,4 @@
 'use client'
-
-import { useEffect, useState } from 'react';
-import GitHubButton from 'react-github-btn';
-
 export default function Footer() {
   return (
     <footer className="bg-background py-6 px-6 mt-12 border-t">
