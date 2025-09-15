@@ -10,8 +10,6 @@ Currently, there are **6 main segments**, with a total of **10 algorithms implem
 
 - **Dijkstra**: Visualize shortest path finding in graphs.
 - **Prime Numbers**: Explore the distribution and identification of prime numbers.
-- **Sorting Algorithms**: Animate various sorting techniques.
-- **N Queen**: Solve the N-Queens puzzle using backtracking.
 - **Binary Search**: Demonstrate efficient searching in sorted arrays.
 - **Recursion Tree**: Map out recursive function calls and structures.
 
@@ -23,17 +21,7 @@ Currently, there are **6 main segments**, with a total of **10 algorithms implem
 - Dijkstra
 - Recursive Maze Creation
 
-### Sorting
-- Bubble Sort
-- Selection Sort
-- Insertion Sort
-- Heap Sort
-- Merge Sort
-- Quick Sort
-
 ## Other Algorithms
-
-<<<<<<< HEAD
 - Sieve of Eratosthenes (for prime numbers)
 =======
 - Graph Search
@@ -41,14 +29,7 @@ Currently, there are **6 main segments**, with a total of **10 algorithms implem
   - BFS
   - Dijkstra
   - Recursive Maze Creation
-- Sorting
-  - Bubble sort
-  - Selection sort
-  - Insertion sort
-  - Quick sort
 - Sieve of Eratosthenes
->>>>>>> ec2fe56 (ok)
-- Archimedes Spiral
 - N Queen Backtracking
 - Binary Search
 - Recursion
